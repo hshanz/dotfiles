@@ -46,7 +46,10 @@ exec_always --no-startup-id picom -bc
 exec feh --bg-scale /home/david/dotfiles/wallhaven-1j7ovw_1920x1080.png
 
 #auto-layout
-exec_always --no-startup-id i3-auto-layout
+exec_always --no-startup-id alternating_layouts.py
+
+#tlp on start up
+exec sudo tlp start
 
 #set keyboard
 exec  setxkbmap se
